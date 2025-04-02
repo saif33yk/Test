@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - GTA 5 Roleplay Server</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="index.html" class="logo">GTA5RP</a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="updates.html" class="nav-link">Updates</a>
+          <a href="staff.html" class="nav-link">Staff</a>
+          <a href="rules.html" class="nav-link">Rules</a>
+          <a href="join.html" class="nav-link">How to Join</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="wall-of-fame.html" class="nav-link">Wall of Fame</a>
+          <a href="events.html" class="nav-link active">Events</a>
+        </nav>
+        
+        <button class="join-btn">Join Now</button>
+        
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <div class="container">
+        <nav class="mobile-nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="updates.html" class="nav-link">Updates</a>
+          <a href="staff.html" class="nav-link">Staff</a>
+          <a href="rules.html" class="nav-link">Rules</a>
+          <a href="join.html" class="nav-link">How to Join</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="wall-of-fame.html" class="nav-link">Wall of Fame</a>
+          <a href="events.html" class="nav-link active">Events</a>
+          <button class="join-btn mobile-join">Join Now</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Server Events</h1>
+      <p class="page-subtitle">Join our exciting community events with prizes, challenges, and unforgettable roleplay experiences.</p>
+    </div>
+  </section>
+
+  <!-- Featured Event Section -->
+  <section class="featured-event">
+    <div class="container">
+      <div class="featured-event-card">
+        <div class="featured-event-grid">
+          <div class="featured-event-image">
+            <img src="img/event-featured.jpg" alt="Street Racing Championship">
+            <div class="featured-event-overlay"></div>
+          </div>
+          
+          <div class="featured-event-content">
+            <span class="event-badge">Featured Event</span>
+            
+            <h2 class="featured-event-title">Street Racing Championship</h2>
+            
+            <p class="featured-event-desc">
+              Compete in the biggest street racing event of the year. Multiple race categories with cash prizes for winners.
+            </p>
+            
+            <div class="event-details-grid">
+              <div class="event-detail">
+                <i class="fas fa-calendar"></i>
+                <span>April 15, 2025</span>
+              </div>
+              <div class="event-detail">
+                <i class="fas fa-clock"></i>
+                <span>8:00 PM EST</span>
+              </div>
+              <div class="event-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Los Santos Highway</span>
+              </div>
+              <div class="event-detail">
+                <i class="fas fa-trophy"></i>
+                <span>$100,000</span>
+              </div>
+            </div>
+            
+            <div class="countdown-timer">
+              <div class="countdown-label">Event starts in:</div>
+              <div class="countdown-numbers">
+                <div class="countdown-number">
+                  <span>3</span>
+                  <span class="countdown-unit">Days</span>
+                </div>
+                <div class="countdown-number">
+                  <span>12</span>
+                  <span class="countdown-unit">Hours</span>
+                </div>
+                <div class="countdown-number">
+                  <span>45</span>
+                  <span class="countdown-unit">Mins</span>
+                </div>
+                <div class="countdown-number">
+                  <span>30</span>
+                  <span class="countdown-unit">Secs</span>
+                </div>
+              </div>
+            </div>
+            
+            <button class="register-btn">
+              Register Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events Section -->
+  <section class="upcoming-events">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Upcoming Events</h2>
+        
+        <div class="carousel-controls">
+          <button class="carousel-btn prev-btn" disabled>
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="carousel-wrapper">
+        <div class="carousel-container">
+          <!-- Slide 1 -->
+          <div class="carousel-slide">
+            <div class="events-grid">
+              <!-- Event Card 1 -->
+              <div class="event-card">
+                <div class="event-image">
+                  <img src="img/event-casino.jpg" alt="Casino Grand Opening">
+                  <span class="event-category">Social</span>
+                </div>
+                <div class="event-info">
+                  <h3 class="event-title">Casino Grand Opening</h3>
+                  <div class="event-meta">
+                    <div class="event-date">
+                      <i class="fas fa-calendar"></i>
+                      <span>April 20, 2025</span>
+                    </div>
+                    <div class="event-slots">
+                      <i class="fas fa-users"></i>
+                      <span>100 slots</span>
+                    </div>
+                  </div>
+                  <div class="event-details">
+                    <p class="event-desc">Join us for the grand opening of the new Vinewood Casino. Free chips for early attendees and special high-stakes games.</p>
+                    <button class="event-register-btn">
+                      Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Event Card 2 -->
+              <div class="event-card">
+                <div class="event-image">
+                  <img src="img/event-heist.jpg" alt="Heist Challenge">
+                  <span class="event-category">Criminal</span>
+                </div>
+                <div class="event-info">
+                  <h3 class="event-title">Heist Challenge</h3>
+                  <div class="event-meta">
+                    <div class="event-date">
+                      <i class="fas fa-calendar"></i>
+                      <span>April 25, 2025</span>
+                    </div>
+                    <div class="event-slots">
+                      <i class="fas fa-users"></i>
+                      <span>20 slots</span>
+                    </div>
+                  </div>
+                  <div class="event-details">
+                    <p class="event-desc">Form a team and compete to complete a complex heist scenario faster than other teams. Limited spots available.</p>
+                    <button class="event-register-btn">
+                      Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Event Card 3 -->
+              <div class="event-card">
+                <div class="event-image">
+                  <img src="img/event-police.jpg" alt="Police vs Criminals">
+                  <span class="event-category">PvP</span>
+                </div>
+                <div class="event-info">
+                  <h3 class="event-title">Police vs Criminals</h3>
+                  <div class="event-meta">
+                    <div class="event-date">
+                      <i class="fas fa-calendar"></i>
+                      <span>May 1, 2025</span>
+                    </div>
+                    <div class="event-slots">
+                      <i class="fas fa-users"></i>
+                      <span>64 slots</span>
+                    </div>
+                  </div>
+                  <div class="event-details">
+                    <p class="event-desc">A server-wide event where police and criminals engage in an epic battle for control of the city.</p>
+                    <button class="event-register-btn">
+                      Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="events-grid">
+              <!-- Event Card 4 -->
+              <div class="event-card">
+                <div class="event-image">
+                  <img src="img/event-car-show.jpg" alt="Car Show & Auction">
+                  <span class="event-category">Social</span>
+                </div>
+                <div class="event-info">
+                  <h3 class="event-title">Car Show & Auction</h3>
+                  <div class="event-meta">
+                    <div class="event-date">
+                      <i class="fas fa-calendar"></i>
+                      <span>May 5, 2025</span>
+                    </div>
+                    <div class="event-slots">
+                      <i class="fas fa-users"></i>
+                      <span>50 slots</span>
+                    </div>
+                  </div>
+                  <div class="event-details">
+                    <p class="event-desc">Show off your custom vehicles and bid on rare cars. Prizes for best customization in various categories.</p>
+                    <button class="event-register-btn">
+                      Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Past Events Section -->
+  <section class="past-events" id="past-events">
+    <div class="container">
+      <h2 class="section-title">Past Events</h2>
+      
+      <div class="events-grid">
+        <!-- Past Event 1 -->
+        <div class="event-card past">
+          <div class="event-image">
+            <img src="img/event-survival.jpg" alt="Survival Challenge">
+            <span class="event-category">PvP</span>
+            <div class="event-completed">
+              <span>Completed</span>
+            </div>
+          </div>
+          <div class="event-info">
+            <h3 class="event-title">Survival Challenge</h3>
+            <div class="event-meta">
+              <div class="event-date">
+                <i class="fas fa-calendar"></i>
+                <span>March 15, 2025</span>
+              </div>
+              <div class="event-prize">
+                <i class="fas fa-trophy"></i>
+                <span>$50,000</span>
+              </div>
+            </div>
+            <button class="event-results-btn">
+              View Results
+            </button>
+          </div>
+        </div>
+        
+        <!-- Past Event 2 -->
+        <div class="event-card past">
+          <div class="event-image">
+            <img src="img/event-talent.jpg" alt="Talent Show">
+            <span class="event-category">Social</span>
+            <div class="event-completed">
+              <span>Completed</span>
+            </div>
+          </div>
+          <div class="event-info">
+            <h3 class="event-title">Talent Show</h3>
+            <div class="event-meta">
+              <div class="event-date">
+                <i class="fas fa-calendar"></i>
+                <span>March 10, 2025</span>
+              </div>
+              <div class="event-prize">
+                <i class="fas fa-trophy"></i>
+                <span>$25,000</span>
+              </div>
+            </div>
+            <button class="event-results-btn">
+              View Results
+            </button>
+          </div>
+        </div>
+        
+        <!-- Past Event 3 -->
+        <div class="event-card past">
+          <div class="event-image">
+            <img src="img/event-fight.jpg" alt="Fight Club Tournament">
+            <span class="event-category">PvP</span>
+            <div class="event-completed">
+              <span>Completed</span>
+            </div>
+          </div>
+          <div class="event-info">
+            <h3 class="event-title">Fight Club Tournament</h3>
+            <div class="event-meta">
+              <div class="event-date">
+                <i class="fas fa-calendar"></i>
+                <span>March 5, 2025</span>
+              </div>
+              <div class="event-prize">
+                <i class="fas fa-trophy"></i>
+                <span>$75,000</span>
+              </div>
+            </div>
+            <button class="event-results-btn">
+              View Results
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Rules Section -->
+  <section class="event-rules">
+    <div class="container">
+      <div class="rules-card">
+        <div class="rules-header">
+          <i class="fas fa-exclamation-triangle rules-icon"></i>
+          <h2 class="rules-title">Event Rules & Guidelines</h2>
+        </div>
+        
+        <div class="rules-grid">
+          <div class="rules-category">
+            <h3 class="category-title">Registration</h3>
+            <ul class="rules-list">
+              <li>Register for events through our Discord or in-game.</li>
+              <li>Some events have limited slots and require early registration.</li>
+              <li>Registration closes 1 hour before the event starts.</li>
+              <li>No-shows may be penalized for future event registrations.</li>
+            </ul>
+          </div>
+          
+          <div class="rules-category">
+            <h3 class="category-title">Participation</h3>
+            <ul class="rules-list">
+              <li>Be online at least 15 minutes before the event starts.</li>
+              <li>Follow staff instructions during the event.</li>
+              <li>Maintain roleplay standards during events.</li>
+              <li>Cheating or exploiting will result in disqualification and possible ban.</li>
+            </ul>
+          </div>
+          
+          <div class="rules-category">
+            <h3 class="category-title">Prizes</h3>
+            <ul class="rules-list">
+              <li>Prizes are awarded at the end of each event.</li>
+              <li>Some prizes may be delivered within 24 hours after the event.</li>
+              <li>Prize distribution is final and determined by event staff.</li>
+              <li>Unclaimed prizes expire after 7 days.</li>
+            </ul>
+          </div>
+          
+          <div class="rules-category">
+            <h3 class="category-title">Streaming</h3>
+            <ul class="rules-list">
+              <li>Streaming events is allowed and encouraged.</li>
+              <li>Use the hashtag #GTA5RP when streaming our events.</li>
+              <li>Some events may have special streaming rules.</li>
+              <li>Featured streamers may receive additional perks.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© <span id="current-year"></span> GTA 5 Roleplay Server. All rights reserved.</p>
+    </div>
+
