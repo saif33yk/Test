@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wall of Fame - GTA 5 Roleplay Server</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="index.html" class="logo">GTA5RP</a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="updates.html" class="nav-link">Updates</a>
+          <a href="staff.html" class="nav-link">Staff</a>
+          <a href="rules.html" class="nav-link">Rules</a>
+          <a href="join.html" class="nav-link">How to Join</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="wall-of-fame.html" class="nav-link active">Wall of Fame</a>
+          <a href="events.html" class="nav-link">Events</a>
+        </nav>
+        
+        <button class="join-btn">Join Now</button>
+        
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <div class="container">
+        <nav class="mobile-nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="updates.html" class="nav-link">Updates</a>
+          <a href="staff.html" class="nav-link">Staff</a>
+          <a href="rules.html" class="nav-link">Rules</a>
+          <a href="join.html" class="nav-link">How to Join</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="wall-of-fame.html" class="nav-link active">Wall of Fame</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <button class="join-btn mobile-join">Join Now</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Wall of Fame</h1>
+      <p class="page-subtitle">Celebrating our most dedicated and accomplished players who have made significant contributions to our roleplay community.</p>
+    </div>
+  </section>
+
+  <!-- Top 3 Players Section -->
+  <section class="top-players-section">
+    <div class="container">
+      <div class="top-three-grid">
+        <!-- 2nd Place -->
+        <div class="top-player second-place">
+          <div class="player-card">
+            <div class="player-rank">2</div>
+            <div class="player-avatar">
+              <img src="img/placeholder-avatar.jpg" alt="StreetRacer99">
+            </div>
+            <h3 class="player-name">StreetRacer99</h3>
+            <p class="player-role">Racing Champion</p>
+            <div class="player-badges">
+              <span class="player-badge">Speed Demon</span>
+              <span class="player-badge">Drift King</span>
+            </div>
+            <div class="player-stats">
+              <div class="stat">
+                <i class="fas fa-trophy"></i>
+                <span>Rep: 95</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span>980 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 1st Place -->
+        <div class="top-player first-place">
+          <div class="player-card">
+            <div class="player-rank">1</div>
+            <div class="player-avatar">
+              <img src="img/placeholder-avatar.jpg" alt="ShadowKnight">
+            </div>
+            <h3 class="player-name neon-name">ShadowKnight</h3>
+            <p class="player-role">Criminal Mastermind</p>
+            <div class="player-badges">
+              <span class="player-badge">Heist King</span>
+              <span class="player-badge">Most Wanted</span>
+            </div>
+            <div class="player-stats">
+              <div class="stat">
+                <i class="fas fa-trophy"></i>
+                <span>Rep: 98</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span>1250 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 3rd Place -->
+        <div class="top-player third-place">
+          <div class="player-card">
+            <div class="player-rank">3</div>
+            <div class="player-avatar">
+              <img src="img/placeholder-avatar.jpg" alt="LawEnforcer">
+            </div>
+            <h3 class="player-name">LawEnforcer</h3>
+            <p class="player-role">Police Chief</p>
+            <div class="player-badges">
+              <span class="player-badge">Top Officer</span>
+              <span class="player-badge">Public Servant</span>
+            </div>
+            <div class="player-stats">
+              <div class="stat">
+                <i class="fas fa-trophy"></i>
+                <span>Rep: 97</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span>1100 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leaderboard Section -->
+  <section class="leaderboard-section" id="leaderboard">
+    <div class="container">
+      <h2 class="section-title">Top Players Leaderboard</h2>
+      
+      <div class="leaderboard-table">
+        <div class="leaderboard-header">
+          <div class="rank-col">#</div>
+          <div class="player-col">Player</div>
+          <div class="role-col">Role</div>
+          <div class="hours-col">
+            <i class="fas fa-clock"></i> Hours
+          </div>
+          <div class="rep-col">
+            <i class="fas fa-star"></i> Rep
+          </div>
+          <div class="date-col">
+            <i class="fas fa-calendar"></i>
+          </div>
+        </div>
+        
+        <!-- Player Rows -->
+        <div class="player-row highlight">
+          <div class="rank-col">1</div>
+          <div class="player-col">
+            <div class="player-avatar-small">
+              <img src="img/placeholder-avatar.jpg" alt="ShadowKnight">
+            </div>
+            <span class="player-name-small neon-name">ShadowKnight</span>
+          </div>
+          <div class="role-col">Criminal Mastermind</div>
+          <div class="hours-col">1250</div>
+          <div class="rep-col">98</div>
+          <div class="date-col">Jan 2023</div>
+        </div>
+        
+        <div class="player-row highlight">
+          <div class="rank-col">2</div>
+          <div class="player-col">
+            <div class="player-avatar-small">
+              <img src="img/placeholder-avatar.jpg" alt="StreetRacer99">
+            </div>
+            <span class="player-name-small neon-name">StreetRacer99</span>
+          </div>
+          <div class="role-col">Racing Champion</div>
+          <div class="hours-col">980</div>
+          <div class="rep-col">95</div>
+          <div class="date-col">Feb 2023</div>
+        </div>
+        
+        <div class="player-row highlight">
+          <div class="rank-col">3</div>
+          <div class="player-col">
+            <div class="player-avatar-small">
+              <img src="img/placeholder-avatar.jpg" alt="LawEnforcer">
+            </div>
+            <span class="player-name-small neon-name">LawEnforcer</span>
+          </div>
+          <div class="role-col">Police Chief</div>
+          <div class="hours-col">1100</div>
+          <div class="rep-col">97</div>
+          <div class="date-col">Jan 2023</div>
+        </div>
+        
+        <div class="player-row">
+          <div class="rank-col">4</div>
+          <div class="player-col">
+            <div class="player-avatar-small">
+              <img src="img/placeholder-avatar.jpg" alt="MedicHero">
+            </div>
+            <span class="player-name-small">MedicHero</span>
+          </div>
+          <div class="role-col">Head Paramedic</div>
+          <div class="hours-col">920</div>
+          <div class="rep-col">94</div>
+          <div class="date-col">Mar 2023</div>
+        </div>
+        
+        <div class="player-row">
+          <div class="rank-col">5</div>
+          <div class="player-col">
+            <div class="player-avatar-small">
+              <img src="img/placeholder-avatar.jpg" alt="BusinessTycoon">
+            </div>
+            <span class="player-name-small">BusinessTycoon</span>
+          </div>
+          <div class="role-col">Entrepreneur</div>
+          <div class="hours-col">870</div>
+          <div class="rep-col">92</div>
+          <div class="date-col">Apr 2023</div>
+        </div>
+        
+        <div class="player-row">
+          <div class="rank-col">6</div>
+          <div class="player-col">
+            <div class="player-avatar-small">
+              <img src="img/placeholder-avatar.jpg" alt="MechanicPro">
+            </div>
+            <span class="player-name-small">MechanicPro</span>
+          </div>
+          <div class="role-col">Master Mechanic</div>
+          <div class="hours-col">830</div>
+          <div class="rep-col">90</div>
+          <div class="date-col">May 2023</div>
+        </div>
+        
+        <div class="player-row">
+          <div class="rank-col">7</div>
+          <div class="player-col">
+            <div class="player-avatar-small">
+              <img src="img/placeholder-avatar.jpg" alt="PilotAce">
+            </div>
+            <span class="player-name-small">PilotAce</span>
+          </div>
+          <div class="role-col">Veteran Pilot</div>
+          <div class="hours-col">790</div>
+          <div class="rep-col">88</div>
+          <div class="date-col">Jun 2023</div>
+        </div>
+        
+        <div class="player-row">
+          <div class="rank-col">8</div>
+          <div class="player-col">
+            <div class="player-avatar-small">
+              <img src="img/placeholder-avatar.jpg" alt="NightlifeKing">
+            </div>
+            <span class="player-name-small">NightlifeKing</span>
+          </div>
+          <div class="role-col">Club Owner</div>
+          <div class="hours-col">760</div>
+          <div class="rep-col">86</div>
+          <div class="date-col">Jul 2023</div>
+        </div>
+        
+        <div class="player-row">
+          <div class="rank-col">9</div>
+          <div class="player-col">
+            <div class="player-avatar-small">
+              <img src="img/placeholder-avatar.jpg" alt="TruckerLegend">
+            </div>
+            <span class="player-name-small">TruckerLegend</span>
+          </div>
+          <div class="role-col">Logistics Expert</div>
+          <div class="hours-col">730</div>
+          <div class="rep-col">84</div>
+          <div class="date-col">Aug 2023</div>
+        </div>
+        
+        <div class="player-row">
+          <div class="rank-col">10</div>
+          <div class="player-col">
+            <div class="player-avatar-small">
+              <img src="img/placeholder-avatar.jpg" alt="FarmerJoe">
+            </div>
+            <span class="player-name-small">FarmerJoe</span>
+          </div>
+          <div class="role-col">Agricultural Tycoon</div>
+          <div class="hours-col">700</div>
+          <div class="rep-col">82</div>
+          <div class="date-col">Sep 2023</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monthly Achievements Section -->
+  <section class="achievements-section">
+    <div class="container">
+      <h2 class="section-title">Monthly Achievements</h2>
+      
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="achievement-title">Most Helpful</h3>
+          <p class="achievement-player">MedicHero</p>
+          <p class="achievement-desc">Assisted over 200 players this month</p>
+        </div>
+        
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="achievement-title">Best Roleplayer</h3>
+          <p class="achievement-player">LawEnforcer</p>
+          <p class="achievement-desc">Created the most engaging RP scenarios</p>
+        </div>
+        
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3 class="achievement-title">Community Builder</h3>
+          <p class="achievement-player">BusinessTycoon</p>
+          <p class="achievement-desc">Created jobs for 50+ players</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© <span id="current-year"></span> GTA 5 Roleplay Server. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/wall-of-fame.js"></script>
+</body>
+</html>
+
