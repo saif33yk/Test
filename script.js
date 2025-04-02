@@ -1,13 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Smooth scroll effect
-    document.querySelector(".join-btn").addEventListener("click", function () {
-        window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
-    });
+    console.log("JavaScript is working!");
 
-    // Scroll animations
-    window.addEventListener("scroll", function () {
-        let heroSection = document.querySelector(".hero");
-        let offset = window.scrollY / heroSection.offsetHeight;
-        document.querySelector(".overlay").style.opacity = 0.6 + offset;
-    });
+    // Add a fade-in effect
+    document.body.style.opacity = "0";
+    setTimeout(() => {
+        document.body.style.transition = "opacity 1.5s";
+        document.body.style.opacity = "1";
+    }, 100);
 });
