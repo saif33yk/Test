@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Team - GTA 5 Roleplay Server</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="index.html" class="logo">GTA5RP</a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="updates.html" class="nav-link">Updates</a>
+          <a href="staff.html" class="nav-link active">Staff</a>
+          <a href="rules.html" class="nav-link">Rules</a>
+          <a href="join.html" class="nav-link">How to Join</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="wall-of-fame.html" class="nav-link">Wall of Fame</a>
+          <a href="events.html" class="nav-link">Events</a>
+        </nav>
+        
+        <button class="join-btn">Join Now</button>
+        
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <div class="container">
+        <nav class="mobile-nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="updates.html" class="nav-link">Updates</a>
+          <a href="staff.html" class="nav-link active">Staff</a>
+          <a href="rules.html" class="nav-link">Rules</a>
+          <a href="join.html" class="nav-link">How to Join</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="wall-of-fame.html" class="nav-link">Wall of Fame</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <button class="join-btn mobile-join">Join Now</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Our Staff Team</h1>
+      <p class="page-subtitle">Meet the dedicated team that keeps our server running smoothly and ensures an amazing experience for all players.</p>
+    </div>
+  </section>
+
+  <!-- Staff Grid Section -->
+  <section class="staff-section" id="staff">
+    <div class="container">
+      <div class="staff-grid">
+        <!-- Staff Member 1 -->
+        <div class="staff-card high-ranking" data-id="1">
+          <div class="staff-avatar">
+            <img src="img/placeholder-avatar.jpg" alt="Alex Johnson">
+          </div>
+          <h3 class="staff-name">Alex Johnson</h3>
+          <p class="staff-role">Server Owner</p>
+          <div class="staff-badges">
+            <span class="staff-badge">Founder</span>
+            <span class="staff-badge">Developer</span>
+          </div>
+          <div class="staff-details">
+            <p class="staff-bio">Founder and lead developer of the server with 5 years of experience in GTA RP.</p>
+            <div class="staff-socials">
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Staff Member 2 -->
+        <div class="staff-card high-ranking" data-id="2">
+          <div class="staff-avatar">
+            <img src="img/placeholder-avatar.jpg" alt="Sarah Williams">
+          </div>
+          <h3 class="staff-name">Sarah Williams</h3>
+          <p class="staff-role">Lead Administrator</p>
+          <div class="staff-badges">
+            <span class="staff-badge">Admin</span>
+            <span class="staff-badge">Support</span>
+          </div>
+          <div class="staff-details">
+            <p class="staff-bio">Manages the admin team and oversees server operations.</p>
+            <div class="staff-socials">
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Staff Member 3 -->
+        <div class="staff-card high-ranking" data-id="3">
+          <div class="staff-avatar">
+            <img src="img/placeholder-avatar.jpg" alt="Michael Chen">
+          </div>
+          <h3 class="staff-name">Michael Chen</h3>
+          <p class="staff-role">Lead Developer</p>
+          <div class="staff-badges">
+            <span class="staff-badge">Developer</span>
+            <span class="staff-badge">Scripter</span>
+          </div>
+          <div class="staff-details">
+            <p class="staff-bio">Responsible for custom scripts and technical improvements.</p>
+            <div class="staff-socials">
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Staff Member 4 -->
+        <div class="staff-card" data-id="4">
+          <div class="staff-avatar">
+            <img src="img/placeholder-avatar.jpg" alt="Emily Rodriguez">
+          </div>
+          <h3 class="staff-name">Emily Rodriguez</h3>
+          <p class="staff-role">Community Manager</p>
+          <div class="staff-badges">
+            <span class="staff-badge">Events</span>
+            <span class="staff-badge">Support</span>
+          </div>
+          <div class="staff-details">
+            <p class="staff-bio">Handles community events and player relations.</p>
+            <div class="staff-socials">
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Staff Member 5 -->
+        <div class="staff-card" data-id="5">
+          <div class="staff-avatar">
+            <img src="img/placeholder-avatar.jpg" alt="David Kim">
+          </div>
+          <h3 class="staff-name">David Kim</h3>
+          <p class="staff-role">Moderator</p>
+          <div class="staff-badges">
+            <span class="staff-badge">Moderator</span>
+          </div>
+          <div class="staff-details">
+            <p class="staff-bio">Ensures server rules are followed and helps resolve conflicts.</p>
+            <div class="staff-socials">
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Staff Member 6 -->
+        <div class="staff-card" data-id="6">
+          <div class="staff-avatar">
+            <img src="img/placeholder-avatar.jpg" alt="Jessica Taylor">
+          </div>
+          <h3 class="staff-name">Jessica Taylor</h3>
+          <p class="staff-role">Support Specialist</p>
+          <div class="staff-badges">
+            <span class="staff-badge">Support</span>
+          </div>
+          <div class="staff-details">
+            <p class="staff-bio">Assists new players and provides technical support.</p>
+            <div class="staff-socials">
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Staff Member 7 -->
+        <div class="staff-card" data-id="7">
+          <div class="staff-avatar">
+            <img src="img/placeholder-avatar.jpg" alt="Robert Wilson">
+          </div>
+          <h3 class="staff-name">Robert Wilson</h3>
+          <p class="staff-role">Event Coordinator</p>
+          <div class="staff-badges">
+            <span class="staff-badge">Events</span>
+          </div>
+          <div class="staff-details">
+            <p class="staff-bio">Plans and executes special server events and activities.</p>
+            <div class="staff-socials">
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Staff Member 8 -->
+        <div class="staff-card" data-id="8">
+          <div class="staff-avatar">
+            <img src="img/placeholder-avatar.jpg" alt="Lisa Martinez">
+          </div>
+          <h3 class="staff-name">Lisa Martinez</h3>
+          <p class="staff-role">Content Creator</p>
+          <div class="staff-badges">
+            <span class="staff-badge">Content</span>
+          </div>
+          <div class="staff-details">
+            <p class="staff-bio">Creates promotional materials and in-game content.</p>
+            <div class="staff-socials">
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Our Team Section -->
+  <section class="join-team-section">
+    <div class="container">
+      <div class="join-team-card">
+        <h2 class="section-title">Join Our Team</h2>
+        <p class="join-team-text">We're always looking for dedicated individuals to join our staff team. If you're passionate about GTA RP and want to help make our server even better, consider applying for a staff position.</p>
+        
+        <div class="positions-grid">
+          <div class="position-item">
+            <i class="fas fa-shield-alt position-icon"></i>
+            <div class="position-info">
+              <h3 class="position-title">Moderator</h3>
+              <p class="position-desc">Help enforce server rules and assist players</p>
+            </div>
+          </div>
+          
+          <div class="position-item">
+            <i class="fas fa-question-circle position-icon"></i>
+            <div class="position-info">
+              <h3 class="position-title">Support Staff</h3>
+              <p class="position-desc">Provide assistance to new and existing players</p>
+            </div>
+          </div>
+          
+          <div class="position-item">
+            <i class="fas fa-users position-icon"></i>
+            <div class="position-info">
+              <h3 class="position-title">Event Coordinator</h3>
+              <p class="position-desc">Plan and run exciting server events</p>
+            </div>
+          </div>
+          
+          <div class="position-item">
+            <i class="fas fa-gavel position-icon"></i>
+            <div class="position-info">
+              <h3 class="position-title">Administrator</h3>
+              <p class="position-desc">Experienced staff can apply for admin positions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© <span id="current-year"></span> GTA 5 Roleplay Server. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/staff.js"></script>
+</body>
+</html>
+
